@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <base href="https://htmlacademy-htmlcss.github.io/674811-sedona-33/3/">
+</head>
+
+<body class="container">
+  <header class="page-header">
+    <nav class="navigation">
+      <a><img src="/images/logo.png" alt="Логотип" class="navigation__logo"></a>
+      <div class="navigation__menu">
+        <ul class="navigation__list">
+          <li class="navigation__list-item navigation__list-item--active">Главная</li>
+          <li class="navigation__list-item">О Седоне</li>
+          <li class="navigation__list-item">Гостиницы</li>
+        </ul>
+      </div>
+      <div class="navigation__user-menu">
+        <button type="button" class="navigation__user-menu-btn navigation__user-menu-btn--search"
+          aria-label="Кнопка поиска"></button>
+        <button type="button" class="navigation__user-menu-btn navigation__user-menu-btn--favorite"
+          aria-label="Кнопка Избранное"></button>
+        <a href="" class="link">Хочу сюда</a>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <section class="welcome">
+      <h1 class="visually_hidden">Добро пожаловать в Седону</h1>
+      <div class="welcome__sedona-tagline">
+        <img src="/images/welcome.png" alt="Welcome to the gorgeous Sedona">
+      </div>
+      <p class="title">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="text text--normal">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+    </section>
+    <section class="reasons">
+      <h2 сlass="visually_hidden">Причины посетить Седону</h2>
+      <section class="reasons__item reasons__item--big-right">
+        <p class="title title--white title--reasons">Настоящий городок</p>
+        <p class="text text--white text--small">— №1 —</p>
+        <p class="text text--white text--small">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+        <img class="reasons__item-img" src="/images/true-town.jpg" alt="Городок Седона">
+      </section>
+      <section>
+        <ul class="services__list">
+          <li class="services__list-item">
+            <img class="services__icon" src="/images/house.svg" aria-label="Иконка Жилья">
+            <p class="title title--normal">Жилье</p>
+            <p class="text text--small">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="services__list-item">
+            <img class="services__icon" src="/images/sandwich.svg" aria-label="Иконка еды">
+            <p class="title title--normal">Еда</p>
+            <p class="text text--small">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+          <li class="services__list-item">
+            <img class="services__icon" src="/images/present.svg" aria-label="Иконка сувниров">
+            <p class="title title--normal">Сувениры</p>
+            <p class="text text--small">Не только китайского, но и настоящего местного производства!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="reasons__item reasons__item--big-left">
+        <p class="title title--white title--reasons">Там есть мост дьявола</p>
+        <p class="text text--white text--small">— №2 —</p>
+        <p class="text text--white text--small">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+        <img class="reasons__item-img" src="/images/devil-bridge.jpg" alt="Мост Дьявола">
+      </section>
+      <section class="other-reasons">
+        <h2 class="visually_hidden">Остальные причины</h2>
+        <ul class="other-reasons__list">
+          <li class="other-reasons__list-item other-reasons__list-item--small">
+            <p class="title title--normal">Небольшаяплощадь</p>
+            <p>— №3 —</p>
+            <p class="text text--small">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="other-reasons__list-item other-reasons__list-item--small">
+            <p class="title title--normal">Красивая дорога</p>
+            <p>— №4 —</p>
+            <p class="text text--small">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="other-reasons__list-item other-reasons__list-item--small">
+            <p class="title title--normal">Мало туристов</p>
+            <p>— №5 —</p>
+            <p class="text text--small">Большинство едет в Гранд Каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section class="sedona-search">
+      <h2 class="visually_hidden">Поиск гостиницы в Седоне</h2>
+      <p class="title">Заинтересовались?</p>
+      <p class="text-normal">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+      </p>
+      <button type="button" class="button">Поиск гостиницы в седоне</button>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <section class="subscribe">
+      <h2 class="visually_hidden">Подписаться на рассылку</h2>
+      <p class="title title--white">Подпишитесь на рассылку</p>
+      <p class="text text--white">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="" class="subscribe__form">
+        <input type="text" class="subscribe__form-input" placeholder="Ваш e-mail">
+        <button type="submit" class="button button--blue subscribe__form-button">Подписаться</button>
+      </form>
+      <section class="contacts">
+        <h2 class="visually_hidden">Контактная информация</h2>
+        <ul class="social-networks-list">
+          <li class="social-networks-list__item">
+            <a href="" class="social-networks-list__item-link">
+              <img src="/images/twitter.svg" alt="Twitter" class="social-networks-list__item-img">
+            </a>
+          </li>
+          <li class="social-networks-list__item">
+            <a href="" class="social-networks-list__item-link">
+              <img src="/images/facebook.svg" alt="Facebook" class="social-networks-list__item-img">
+            </a>
+          </li>
+          <li class="social-networks-list__item">
+            <a href="" class="social-networks-list__item-link">
+              <img src="/images/youtube.svg" alt="Youtube" class="social-networks-list__item-img">
+            </a>
+          </li>
+        </ul>
+        <p class="contacts__tel-number">+7 (812) 812-12-12</p>
+        <img src="/images/html-academy.svg" alt="Лого Академии" class="contacts__academy-img">
+      </section>
+    </section>
+  </footer>
+</body>
+
+</html>
