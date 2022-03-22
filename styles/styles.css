@@ -227,7 +227,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-bottom: 63px;
-  background-image: url("/images/index_background.jpg");
+  background-image: url("../images/index_background.jpg");
   background-repeat: no-repeat;
   background-color: #83B3D3;
   padding-top: 51px;
@@ -443,7 +443,7 @@ body {
   text-align: center;
   padding-top: 94px;
   color: #FFFFFF;
-  background-image: url("/images/background.jpg");
+  background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -632,7 +632,7 @@ body {
   width: 53px;
   height: 53px;
   background-color: #F2F2F2;
-  background-image: url("/images/close_button.svg");
+  background-image: url("../images/close_button.svg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -653,7 +653,7 @@ body {
 
 .modal-search__button-close:active {
   background-color: #E6E6E6;
-  background-image: url("/images/close_button_active.svg");
+  background-image: url("../images/close_button_active.svg");
 }
 
 
@@ -684,7 +684,7 @@ body {
   font-size: 18px;
   line-height: 40px;
   border-radius: 4px;
-  background-image: url("/images/modal_calendar.svg");
+  background-image: url("../images/modal_calendar.svg");
   background-repeat: no-repeat;
   background-position-x: calc(100% - 19px);
   background-position-y: 50%;
@@ -778,7 +778,7 @@ body {
   height: 23px;
   background-color: transparent;
   border: 0;
-  background-image: url("/images/modal_minus.svg");
+  background-image: url("../images/modal_minus.svg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -791,7 +791,7 @@ body {
 }
 
 .modal-search__button-minus:hover {
-  background-image: url("/images/modal_minus_hover.svg");
+  background-image: url("../images/modal_minus_hover.svg");
   cursor: pointer;
 }
 
@@ -801,7 +801,7 @@ body {
 }
 
 .modal-search__button-minus:active {
-  background-image: url("/images/modal_minus_active.svg");
+  background-image: url("../images/modal_minus_active.svg");
 }
 
 .modal-search__button-plus {
@@ -809,7 +809,7 @@ body {
   height: 23px;
   background-color: transparent;
   border: 0;
-  background-image: url("/images/modal_plus.svg");
+  background-image: url("../images/modal_plus.svg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
@@ -822,11 +822,11 @@ body {
 }
 
 .modal-search__button-plus:hover {
-  background-image: url("/images/modal_plus_hover.svg");
+  background-image: url("../images/modal_plus_hover.svg");
 }
 
 .modal-search__button-plus:active {
-  background-image: url("/images/modal_minus_active.svg");
+  background-image: url("../images/modal_minus_active.svg");
 }
 
 .modal-search__kids {
@@ -864,7 +864,7 @@ body {
 }
 
 .modal-search__kids-message::after {
-  content: url("/images/message_rect.svg");
+  content: url("../images/message_rect.svg");
   width: 19px;
   height: 9px;
   position: absolute;
@@ -908,7 +908,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 35px 72px 0 71px;
-  background-image: url("/images/catalog_background_1.jpg");
+  background-image: url("../images/catalog_background_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #4682b4;
@@ -943,7 +943,7 @@ body {
 }
 
 .breadcrumbs__item:not(:last-child)::after {
-  content: url("/images/arrow.svg");
+  content: url("../images/arrow.svg");
   position: absolute;
   top: 0;
   right: -16px;
@@ -1042,7 +1042,7 @@ body {
 .input-group__list-item-input--checkbox[type="checkbox"]:checked + .input-group__list-item-ckeckbox-mark::before {
   position: absolute;
   display: block;
-  content: url("/images/choosen_mark.svg");
+  content: url("../images/choosen_mark.svg");
   width: 12px;
   height: 10px;
   top: -1px;
@@ -1229,7 +1229,7 @@ body {
 .select-form__wrapper::after {
   content: "";
   position: absolute;
-  background-image: url("/images/arrow_select.svg");
+  background-image: url("../images/arrow_select.svg");
   background-repeat: no-repeat;
   background-position-x: 50%;
   background-position-y: 50%;
