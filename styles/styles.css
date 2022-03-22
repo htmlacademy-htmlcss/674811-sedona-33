@@ -351,7 +351,7 @@ body {
 
 .services__icon--food {
   width: 73px;
-  height: 70xp;
+  height: 70px;
 }
 
 .services__icon--present {
@@ -724,10 +724,20 @@ body {
   position: relative;
 }
 
-.modal-search__wrapper-counter {
+.modal-search__people-counter {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.modal-search__counter-wrapper {
+  position: relative;
+}
+
+.modal-search__counter-wrapper .text.modal-search__adults,
+.modal-search__counter-wrapper .text.modal-search__kids  {
+  margin-bottom: 0;
 }
 
 .modal-search__adults {
@@ -763,19 +773,60 @@ body {
   z-index: 10;
 }
 
-.modal-search__counter-signs--kids::before {
-  left: 116px;
+.modal-search__button-minus {
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("/images/modal_minus.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  padding: 0;
+  position: absolute;
+  right: 96px;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-12px);
 }
 
-.modal-search__counter-signs::after {
-  content: url("/images/modal_counter_plus.svg");
-  width: 13px;
-  height: 13px;
+.modal-search__button-minus:hover {
+  background-image: url("/images/modal_minus_hover.svg");
+  cursor: pointer;
+}
+
+.modal-search__button-plus,
+.modal-search__button-minus:focus {
+  outline-color: #83B3D3;
+}
+
+.modal-search__button-minus:active {
+  background-image: url("/images/modal_minus_active.svg");
+}
+
+.modal-search__button-plus {
+  width: 23px;
+  height: 23px;
+  background-color: transparent;
+  border: 0;
+  background-image: url("/images/modal_plus.svg");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  padding: 0;
   position: absolute;
-  top: 4px;
-  right: 19px;
-  opacity: 0.3;
+  right: 15px;
   z-index: 10;
+  top: 50%;
+  transform: translateY(-12px);
+}
+
+.modal-search__button-plus:hover {
+  background-image: url("/images/modal_plus_hover.svg");
+}
+
+.modal-search__button-plus:active {
+  background-image: url("/images/modal_minus_active.svg");
 }
 
 .modal-search__kids {
@@ -789,9 +840,10 @@ body {
   border: 0;
   border-radius: 50%;
   background-color: #83B3D3;
-  position: relative;
-  margin-left: auto;
-  margin-right: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-12px);
+  left: 57px;
 }
 
 .modal-search__kids-message {
@@ -1320,7 +1372,7 @@ body {
 
 .button--product-card {
   background-color: #756257;
-  padding: 8px 22px;
+  padding: 8px 16px;
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
@@ -1343,12 +1395,13 @@ body {
 
 .button--product-card-blue {
   background-color: #83B3D3;
+  padding: 8px 12px;
 }
 
 .button--product-card-blue:hover {
   background-color: #68A2CA;
   border: 1px solid #756257;
-  padding: 7px 21px;
+  padding: 7px 11px;
 }
 
 .button--product-card-green:focus-visible,
