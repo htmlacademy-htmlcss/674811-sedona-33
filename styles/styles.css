@@ -65,6 +65,11 @@ body {
   margin: -1px;
 }
 
+.catalog-page,
+.index-page {
+  min-width: 1200px;
+}
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -77,7 +82,7 @@ body {
   padding-right: 70px;
   display: flex;
   flex-direction: row;
-  height: 65px;
+  min-height: 65px;
   background-color: #FFFFFF;
 }
 
@@ -94,9 +99,9 @@ body {
 
 .navigation__list {
   display: flex;
-  min-width: 345px;
+  min-width: 309px;
   margin: 0;
-  margin-left: 239px;
+  margin-left: 187px;
   justify-content: space-between;
   margin-right: auto;
   padding: 0;
@@ -105,6 +110,7 @@ body {
 .navigation__list-item {
   font-family: "PT Sans";
   font-weight: bold;
+  font-size: 20px;
   line-height: 26px;
   position: relative;
   cursor: pointer;
@@ -119,7 +125,7 @@ body {
   content: "";
   display: block;
   position: absolute;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background-color: #756257;
   top: 44px;
@@ -154,6 +160,7 @@ body {
   padding-bottom: 8px;
   line-height: 20px;
   font-size: 16px;
+  min-height: 37px;
 }
 
 .link:hover {
@@ -210,8 +217,8 @@ body {
   color: #FFFFFF;
   text-align: center;
   position: absolute;
-  top: -12px;
-  left: 22px;
+  top: -5px;
+  left: 24px;
   padding-top: 4px;
 }
 
@@ -220,6 +227,7 @@ body {
   flex-direction: column;
   align-items: center;
   background-color: #FFFFFF;
+  min-height: 767px;
 }
 
 .welcome__sedona-tagline {
@@ -409,7 +417,7 @@ body {
   margin-bottom: 29px;
 }
 
-.other-reasons .services__list-item .text {
+.text.text--small.other-reasons__reasons-description {
   width: 250px;
 }
 
@@ -442,14 +450,18 @@ body {
   flex-direction: column;
   text-align: center;
   padding-top: 94px;
+  padding-left: 30px;
+  padding-right: 30px;
   color: #FFFFFF;
+  background-color: #828e96;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .subscribe .title {
   color: #FFFFFF;
-  margin-bottom: 29px;
+  margin-bottom: 46px;
 }
 
 .subscribe .text {
@@ -505,6 +517,7 @@ body {
   line-height: 26px;
   font-size: 20px;
   min-width: 200px;
+  min-height: 60px;
 }
 
 .button--blue:hover {
@@ -524,7 +537,7 @@ body {
 .contacts {
   display: flex;
   justify-content: space-between;
-  height: 120px;
+  min-height: 120px;
   padding-left: 72px;
   padding-right: 72px;
 }
@@ -566,6 +579,10 @@ body {
   font-size: 40px;
   line-height: 40px;
   padding: 15px;
+}
+
+.contacts__academy-logo-link {
+  align-self: center;
 }
 
 .contacts__academy-img {
@@ -736,7 +753,7 @@ body {
 }
 
 .modal-search__counter-wrapper .text.modal-search__adults,
-.modal-search__counter-wrapper .text.modal-search__kids  {
+.modal-search__counter-wrapper .text.modal-search__kids {
   margin-bottom: 0;
 }
 
@@ -907,17 +924,17 @@ body {
 .search-hotels {
   display: flex;
   flex-direction: column;
-  padding: 35px 72px 0 71px;
+  padding: 35px 72px 66px 71px;
   background-image: url("../images/catalog_background_1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #4682b4;
   color: #FFFFFF;
-  padding-bottom: 83px;
 }
 
 .breadcrumbs {
   margin-top: 0;
+  margin-bottom: 45px;
   padding-left: 0;
   display: flex;
   align-items: center;
@@ -926,6 +943,8 @@ body {
 .breadcrumbs__item {
   position: relative;
   margin-right: 26px;
+  font-size: 16px;
+  line-height: 15px;
 }
 
 
@@ -1000,6 +1019,7 @@ body {
 
 .catalog-search__header {
   display: flex;
+  margin-bottom: 53px;
 }
 
 .input-group__list-item-label {
@@ -1039,7 +1059,7 @@ body {
 }
 
 
-.input-group__list-item-input--checkbox[type="checkbox"]:checked + .input-group__list-item-ckeckbox-mark::before {
+.input-group__list-item-input--checkbox[type="checkbox"]:checked+.input-group__list-item-ckeckbox-mark::before {
   position: absolute;
   display: block;
   content: url("../images/choosen_mark.svg");
@@ -1068,7 +1088,7 @@ body {
   border-radius: 50%;
 }
 
-.input-group__list-item-input--radio[type="radio"]:checked + .input-group__list-item-radio-mark::before{
+.input-group__list-item-input--radio[type="radio"]:checked+.input-group__list-item-radio-mark::before {
   position: absolute;
   top: 5px;
   left: 5px;
@@ -1084,7 +1104,7 @@ body {
   padding-bottom: 11px;
 }
 
-.input-group__title--price{
+.input-group__title--price {
   margin-bottom: 34px;
 }
 
@@ -1121,7 +1141,7 @@ body {
 }
 
 .range-scale__range-toggle--max {
-  left: 100%;
+  right: -11px;
 }
 
 .input-group__price-wrapper {
@@ -1181,7 +1201,8 @@ body {
   line-height: 21px;
   border-radius: 4px;
   min-width: auto;
-  padding: 17px 29px;
+  min-height: 48px;
+  padding: 13px 29px;
   margin-bottom: 13px;
 }
 
@@ -1192,6 +1213,7 @@ body {
   background-color: transparent;
   font-weight: 400;
   min-width: auto;
+  min-height: 48px;
   padding: 4px 12px 5px 10px;
   margin: 0 auto;
   cursor: pointer;
@@ -1296,6 +1318,7 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 340px);
   gap: 18px;
+  padding-bottom: 26px;
 }
 
 .product-card {
@@ -1303,6 +1326,10 @@ body {
   width: 340px;
   flex-direction: column;
   padding: 20px;
+}
+
+.product-card .button {
+  min-height: 37px;
 }
 
 .product-card__img {
@@ -1438,6 +1465,9 @@ body {
 
 .subscribe.subscribe--catalog {
   background-image: none;
+  background-color: #FFFFFF;
+  padding-top: 73px;
+  margin-bottom: 47px;
 }
 
 .subscribe--catalog .text,
@@ -1450,7 +1480,7 @@ body {
 }
 
 .catalog-search__load-button-wrapper {
-  padding: 34px 0 34px 0;
+  padding: 30px 0 30px 0;
   border-top: 1px solid #E6E6E6;
   border-bottom: 1px solid #E6E6E6;
   margin-bottom: 30px;
@@ -1481,6 +1511,7 @@ body {
   height: 55px;
   border-radius: 4px;
   cursor: pointer;
+  min-height: 55px;
 }
 
 .button--pagination:hover:not(.button--pagination-active) {
